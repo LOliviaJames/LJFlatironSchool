@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title> How Well Do You Know Leslie James? </title>
+            <link rel = "stylesheet" href= "LeadershipStyle.css">
+        </head>
+        
+        <body>
+
+            <div id = "head" class="header">
+                <img class ="a" src="LJPic2.jpg" style = "width:75px; height:75px; margin-top:20px;">
+                <img class ="a" src="flatiron2.jpg" style = "width:75px; height:75px; margin-top:20px;">
+                <h4>LESLIE JAMES FOR FLATIRON SCHOOL</h4>                
+            </div>
+
+            <div id= "navbar">        
+                <ul class="nav">
+                    <li class="nav"><a href="index.html">Why Leslie James for Flatiron School?</a></li>
+                    <li class="nav"><a href="PastEmploy.html">Past Employment Experiences</a></li>
+                    <li class="nav"><a href="Leadership.html">Leadership and Accomplishments</a></li>
+                    <li class="nav"><a href="Quiz.html">How Well Do You Know Leslie James?</a></li>
+                    <li class="nav"><a href="Feedback.php">Feedback</a></li>
+                </ul>
+            </div>
+
+
+            <div id="header">               <!--open header div-->
+                <h1>How Well Do You Know Leslie James? The Answer Will Astound You!</h1>
+                <p class= "subhead">Although I am certain that you will pass this quiz with flying colors on your first go-around, feel free to take the quiz again 
+                    and get some answers wrong on purpose in order to see different outputs for different scores!</p>
+            </div>  
+
+
+            <div id="quiz">
+
+                <!--quiz questions-->
+                <form id="myQuiz" action=" ">
+                    <p>Leslie is a customer service-oriented professional.</p>
+                        <input type="radio" name="questionA" value="20" id="qoption" required/>
+                        <label for="qoption">True</label><br/>
+                        <input type="radio" name="questionA" value="0" id="qoption" required/>
+                        <label for="qoption">False</label><br/></br>
+                    <p>Leslie has amazing interpersonal skills and takes joy in being client-facing and interacting with people from various backgrounds.</p>
+                        <input type="radio" name="questionB" value="20" id="qoption" required/>
+                        <label for="qoption">True</label><br/>
+                        <input type="radio" name="questionB" value="0" id="qoption" required/>
+                        <label for="qoption">False</label><br/></br>
+                    <p>Leslie is scrappy and solutions-oriented.</p>
+                        <input type="radio" name="questionC" value="20" id="qoption" required/>
+                        <label for="qoption">True</label><br/>
+                        <input type="radio" name="questionC" value="0" id="qoption" required/>
+                        <label for="qoption">False</label><br/></br>
+                    <p>Leslie is highly empathetic.</p>
+                        <input type="radio" name="questionD" value="20" id="qoption" required/>
+                        <label for="qoption">True</label><br/>
+                        <input type="radio" name="questionD" value="0" id="qoption" required/>
+                        <label for="qoption">False</label><br/></br>
+                    <p>Leslie is NOT self-motivated and does NOT have an entrepreneurial spirit.</p>
+                        <input type="radio" name="questionE" value="0" id="qoption" required/>
+                        <label for="qoption">True</label><br/>
+                        <input type="radio" name="questionE" value="20" id="qoption" required/>
+                        <label for="qoption">False</label><br/></br>
+
+                    <div style="text-align:center;">
+                        <button type="submit" value="Submit">Submit</button>
+                    </div>
+                </form>
+
+                <p>
+                    <font color = "blue" size= 4px;>*"Behind the Scenes" Note: I have been working for days on trying to make it so that the below empty space is eliminated 
+                    and that the 'Try Again' button only shows up after the quiz has been submitted the first time. I acknowledged that,
+                    in the interest of time, I had to cut my losses and submit this project; or else I could end up working on it for who
+                    knows how much longer. However, I have not given up;  this portion is still a work in progress, so please bear with me. 
+                    Also, all help and suggestions are welcomed!
+                    </font>
+                </p>
+                
+                <!--display quiz score-->
+
+                <p class = "inline" id="displayScore"></p>
+                <p class = "inline" id="grade"></p>
+                <p class = "inline" id="percentsign"></p>
+                <p id="grade2"></p>
+                <img id="gif" src=""></br></br>
+                <p id="answer1"></p></br>
+                <p id="answer2"></p></br>
+                <p id="answer3"></p></br>
+                <p id="answer4"></p></br>
+                <p id="answer5"></p>
+
+                
+
+                <div style="text-align:center;">
+                    <p>Would you like to try taking the quiz again?</p>
+                        <form id="taketwo" action="Quiz.html">
+                            <input style="text-align:center;" type="submit" value="Try again!">
+                        </form>  
+                </div>
+
+            </div>                              <!--close main div-->
+        
+
+            <!--retrieve answer from each question and calculate score-->
+            <script>
+
+                var yourScore = "Your score is: ";
+                var percent = "%";
+                var q1Answer = "Leslie is a customer service-oriented professional: True. Absolutely. Having served as the primary point of contact in various roles that she has held since college, Leslie is prepared to bring a high level of customer service to any role at Flatiron School.";
+                var q2Answer = "Leslie has amazing interpersonal skills and takes joy in being client-facing and interacting with people from various backgrounds: True. Are you looking for a people-person? Well then, look no further! Leslie would be the ideal candidate for any roles at Flatiron School that involve communicating with prospective and current students, being a liaison to internal staff and any and everything in between!";
+                var q3Answer = "Leslie is scrappy and solutions-oriented: True. You have a problem? Leslie will be the one to solve it! Leslie thrived as a research assistant in a medical setting, even though the closest she ever got to a medical education was her high school Chemistry class. Whatever skills you are looking for, Leslie will acquire and master them in order to execute her professional responsibilities and support the mission of Flatiron School.";
+                var q4Answer = "Leslie is highly empathetic: True. You bet she is! Although Leslie has always been an empathetic person, that trait only intensified after working in a healthcare setting. As an employee of Flatiron School, she would continue to exhibit empathy by putting herself in other people's shoes, looking at problems from different perspectives and providing solutions that best suit the School's diverse array of prospective and enrolled students, employees and partners.";
+                var q5Answer = "Leslie is NOT self-motivated and does NOT have an entrepreneurial spirit: False. Ah ha, tried to throw a curveball in there with those negations, but you didn't fall for it! Leslie is indeed self-motivated and appreciates any opportunity to take an assignment by the reins (or even initiate a project) and make it her own. Leslie understands that Flatiron School is growing rapidly; so she would be extremely enthusiastic to develop and implement processes in order to ensure that the School continues to run as an efficient, well-oiled machine, even as the company scales.";
+
+                document.getElementById("myQuiz").onsubmit=function(){
+
+                    questionA=parseInt(document.querySelector('input[name="questionA"]:checked').value);
+                    questionB=parseInt(document.querySelector('input[name="questionB"]:checked').value);
+                    questionC=parseInt(document.querySelector('input[name="questionC"]:checked').value);
+                    questionD=parseInt(document.querySelector('input[name="questionD"]:checked').value);
+                    questionE=parseInt(document.querySelector('input[name="questionE"]:checked').value);
+                
+                    // calculate score
+                    finalScore = questionA+questionB+questionC+questionD+questionE;
+
+
+                    document.getElementById("displayScore").innerHTML = yourScore;
+                    document.getElementById("percentsign").innerHTML = percent;
+                    document.getElementById("grade").innerHTML = finalScore;
+
+                    
+
+                    //conditional outputs based on score
+                    if (finalScore == 0) {
+                        finalScore2 = "We have probably never met before, so this score makes sense. Feel free to retake the quiz after reading the correct answers below. You will do much better the second time around, I promise!"
+                        document.getElementById("gif").src = "percent0.gif"
+                        };
+                    if (finalScore == 20) {
+                        finalScore2 = "We're still basically strangers, but feel free to read the correct answers below and get to know me a bit better!"
+                        document.getElementById("gif").src = "percent20.gif"
+                        };
+                    if (finalScore == 40) {
+                        finalScore2 = "Ok, you more or less get what I'm about..."
+                        document.getElementById("gif").src = "percent40.gif"
+                        };
+                    if (finalScore == 60) {
+                        finalScore2 = "Getting warmer..."
+                        document.getElementById("gif").src = "percent60.gif"
+                        };
+                    if (finalScore == 80) {
+                        finalScore2 = "Did we go to high school together or something? Because you seem to know me pretty well!"
+                        document.getElementById("gif").src = "percent80.gif"
+                        };
+                    if (finalScore == 100) {
+                        finalScore2 = "We must have met in a past life, because you read me like a book!"
+                        document.getElementById("gif").src = "percent100.gif"  
+
+                    };
+
+
+                    document.getElementById("grade2").innerHTML = finalScore2;
+                    document.getElementById("answer1").innerHTML = q1Answer;
+                    document.getElementById("answer2").innerHTML = q2Answer;
+                    document.getElementById("answer3").innerHTML = q3Answer;
+                    document.getElementById("answer4").innerHTML = q4Answer;
+                    document.getElementById("answer5").innerHTML = q5Answer;
+
+                return false;
+                
+                }
+
+            </script>
+        
+        </body>
+    </html>

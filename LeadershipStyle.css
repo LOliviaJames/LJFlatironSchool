@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+        <style>
+
+            /*Hover tooltip*/
+        
+            .tooltip {
+                position: relative;
+                display: inline-block;
+                border-bottom: 1px dotted black;
+                /* font-weight: bold; */
+            }
+
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                width: 240px;
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                font-size: 20px;
+
+                /* Position the tooltip */
+                position: absolute;
+                z-index: 1;
+            }
+
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+            }
+
+            
+            .thick {
+                font-family: "Garamond";
+                font-weight: bold;
+                font-size: 25px;
+            }
+
+            .normalfont{
+                font-weight: normal;
+            }
+
+
+            /*Quiz submit button*/
+            .button .placement {
+                text-align: center;
+            }
+
+            /*Float image*/
+
+            img.a {
+                float: left;
+            }
+            img.b {
+                float: right;
+            }
+
+            p {
+                font-family: "Garamond";
+                font-size: 30px;
+            }
+
+            select {
+                font-family: "Garamond";
+                font-size: 30px;
+            }
+
+            
+            label {
+                font-family: "Garamond";
+                font-size: 30px;
+            }
+
+
+            /*Header formatting*/
+            .header {
+                padding: 1px;
+                background: #33adff;
+                color: white;
+                font-size: 30px;
+                font-family: "Times New Roman";
+                font-weight: lighter;
+            }
+
+              /*Navigation Bar*/
+
+            ul.nav {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #002266;
+            }
+              
+            li.nav {
+                float: left;
+            }
+              
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 18px;
+            
+            }
+
+              
+              
+              /* Change the link color to #111 (black) on hover */
+            li a:hover {
+                background-color: #33aaff;
+            }
+            
+            
+           div.employ {
+                text-align: center;
+            }
+
+            p.subhead{
+                font-size: 24px;
+            }
+
+            div.profinterests{
+                text-align: center;
+            }
+
+            ul.list{
+                list-style-type: none;
+                font-family: "Garamond";
+                font-size: 25px;
+            }
+
+            p.bold{
+                font-weight: bold;
+            }
+
+            div.feedbackbody{
+                font-family = "Garamond";
+                font-size: 30px;
+            }
+
+            p.inline{
+                display: inline;
+            }
+
+            p.endnote{
+                text-align: left;
+                font-size: 25px;
+            }
+
+
+        </style>
+
+</html>
